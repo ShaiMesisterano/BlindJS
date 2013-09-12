@@ -1,14 +1,17 @@
 describe("BlindJS Library", function () {
-    describe("Given a textbox named 'elementId' with the content 'abc'", function () {
+    describe("Given an input div and an output textarea", function () {
         beforeEach(function () {
-            var contentParameter = "elementId";
-            // Create a dummy element
-            var el = document.createElement("div");
-            el.id = contentParameter;
-            el.value = "abc";
-            document.body.appendChild(el);
+            // Create dummy DIV
+            var divElement = document.createElement("div");
+             divElement.id = "input";
+             divElement .value = "abc";
+            document.body.appendChild( divElement );
+	    // Create dummy TextBox
+ 	     textareaElement  = document.createElement("textarea");
+             textareaElement.id = "output";
+            document.body.appendChild( textareaElement);
 
-            BlindJS.start(contentParameter);
+            BlindJS.start("input", "output");
         });
         describe("When starting", function () {
             it("Should save parameter as 'BlindJS.$el'", function () {

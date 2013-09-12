@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="en">
-    
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <script src="index.js"></script>
     </head>
-    
     <body>
         <p>
-            <textarea id="textarea1" cols="30" rows="10"></textarea>
+            <div id="input">
+                abc defg hijk lmnop qrst uv wxyz
+            </div>
+            <textarea id="output" cols="30" rows="10"></textarea>
         </p>
-        <p>
-            <button onclick='BlindJS.start("textarea1");'>Submit</button>
-        </p>
+        <script src="../src/blind-0.1.1.min.js"></script>
+        <script>
+            BlindJS.start("input", "output");
+        </script>
     </body>
-
 </html>
