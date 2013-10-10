@@ -1,9 +1,10 @@
-<h1>BlindJS - TYPE in gibberish, DISPLAY pre-defined code</h1>
-BlindJS is a Javascritp library that replaces textbox content with pre-defined in your webpages.
+<h1>BlindJS</h1>
+<h2>Don't look at what you're typing, BlindJS will display your pre-defined code.</h2>
+BlindJS is a Javascript library that replaces textarea content with pre-defined code in your web pages.
 
-<h2>Quick install</h2>
+<h3>Quick install</h3>
 
-Include the javascript before <pre>&lt;/body&gt;</pre>:
+Include the Javascript code before <pre>&lt;/body&gt;</pre>:
 
 Create a wrapper and insert your code:
 
@@ -28,6 +29,6 @@ Start BlindJS:
 BlindJS.start("myDiv", "myTextarea");
 </pre>
 
-<h2>About</h2>
+<h3>About</h3>
 
 BlindJS is created by <a href="http://www.mcterano.com/blog" title="Shai Mesisterano">Shai Mesisterano</a> and is licensed under <a href="https://raw.github.com/ShaiMesisterano/BlindJS/master/LICENSE" title="MIT LICENSE">MIT</a>.
