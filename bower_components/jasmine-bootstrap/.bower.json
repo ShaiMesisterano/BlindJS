@@ -1,0 +1,14 @@
+{
+  "name": "jasmine-bootstrap",
+  "homepage": "https://github.com/esbie/jasmine-bootstrap",
+  "_release": "79b400f077",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "79b400f077bcd649cf6b1500c9e767d47d6eacdb"
+  },
+  "_source": "git://github.com/esbie/jasmine-bootstrap.git",
+  "_target": "*",
+  "_originalSource": "jasmine-bootstrap",
+  "_direct": true
+}

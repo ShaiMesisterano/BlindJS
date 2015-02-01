@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasmine Spec Runner</title>
+
+    <!-- Default to bootstrap 3 -->
+    <link rel="stylesheet" href="../src/lib/bootstrap.css" type="text/css">
+
+    <!-- Bootstrap 2 -->
+    <!--
+    <link rel="stylesheet" href="../src/lib/bootstrap2.css" type="text/css">
+    -->
+
+    <!-- Bootstrap 3 -->
+    <!--
+    <link rel="stylesheet" href="../src/lib/bootstrap3.css" type="text/css">
+    -->
+
+    <!-- Bootstrap 3 with theme -->
+    <!--
+    <link rel="stylesheet" href="../src/lib/bootstrap3.css" type="text/css">
+    <link rel="stylesheet" href="../src/lib/bootstrap-theme.css" type="text/css">
+    -->
+    <link rel="stylesheet" href="../src/jasmine-bootstrap.css" type="text/css">
+</head>
+
+<body>
+<script src="../../../src/blind.min.js"></script>
+<script>
+    BlindJS.start({
+        input: divElement.innerHTML,
+        output: textareaElement
+    });
+</script>
+
+<!-- load jasmine -->
+<script type="text/javascript" src="jasmine.js"></script>
+<script type="text/javascript" src="../src/jasmine-bootstrap.js"></script>
+
+<!-- load your spec files -->
+<script type="text/javascript" src="spec/spec.js"></script>
+
+<!-- run specs -->
+<script type="text/javascript">
+    jasmine.getEnv().addReporter(new jasmine.BootstrapReporter());
+    jasmine.getEnv().execute();
+</script>
+</body>
+</html>
