@@ -19,8 +19,8 @@ var BlindJS = (function (blindJS) {
 		blindJS.printText();
 	};
 
-	blindJS.handleKeyUpEvent = function (self) {
-		this.$el.addEventListener('keyup', self.type);
+	blindJS.handleKeyUpEvent = function () {
+		this.$el.addEventListener('keyup', this.type);
 	};
 
 	blindJS.start = function (cfg) {
@@ -28,7 +28,7 @@ var BlindJS = (function (blindJS) {
 		this.typed = "";
 		this.content = cfg.input;
 		this.$el = cfg.output;
-		this.handleKeyUpEvent(this);
+		this.call(handleKeyUpEvent);
 	};
 
 	return blindJS;
