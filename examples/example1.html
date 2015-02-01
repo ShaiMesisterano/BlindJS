@@ -5,16 +5,15 @@
 		<title></title>
 	</head>
 	<body>
-		<p>
-		<div id="divElement">abc defg hijk lmnop qrst uv wxyz</div>
-		<textarea id="textareaElement" cols="30" rows="10"></textarea>
-		</p>
+		<textarea data-blind-script-id="letters" cols="30" rows="10"></textarea>
+
+		<script id="letters" type="text/blind-js">
+			abc defg hijk lmnop qrst uv wxyz
+		</script>
+
 		<script src="../src/blind.min.js"></script>
 		<script>
-			BlindJS.start({
-			input: divElement.innerHTML,
-			output: textareaElement
-			});
+			BlindJS.start();
 		</script>
 	</body>
 </html>
