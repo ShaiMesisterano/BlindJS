@@ -1,0 +1,33 @@
+{
+   "name": "brackets-blindjs",
+   "version": "0.1.1",
+   "description": "BlindJS is a Javascript library that allows blind typing of pre-defined code. So stop worrying about writing valid code and start typing fast as hell!",
+   "keywords": [
+       "extension",
+       "brackets",
+       "code",
+       "presentation",
+       "lecture",
+       "blind",
+       "typing"
+   ],
+   "maintainers": [
+       {
+           "name": "Shai Mesisterano",
+           "email": "shai@mcterano.com",
+           "web": "http://www.mcterano.com/blindjs" 
+       } 
+   ],
+   "licenses": [
+       {
+           "type": "MIT",
+           "url": "http://www.mcterano.com/blindjs" 
+       } 
+   ],
+   "repositories": [
+       {
+           "type": "git",
+           "url": "https://github.com/ShaiMesisterano/brackets-blindjs.git" 
+       } 
+   ]
+}
