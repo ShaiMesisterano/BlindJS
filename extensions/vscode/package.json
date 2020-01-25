@@ -2,7 +2,7 @@
 	"name": "blindjs",
 	"displayName": "BlindJS",
 	"description": "BlindJS is a Javascript library that allows blind typing of pre-defined code. So stop worrying about writing valid code and start typing fast as hell!",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"author": {
 		"name": "Shai Mesisterano"
 	  },
