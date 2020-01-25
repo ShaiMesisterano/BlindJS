@@ -1,0 +1,60 @@
+{
+	"name": "blindjs",
+	"displayName": "BlindJS",
+	"description": "BlindJS is a Javascript library that allows blind typing of pre-defined code. So stop worrying about writing valid code and start typing fast as hell!",
+	"version": "0.0.2",
+	"publisher": "ShaiMesisterano",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ShaiMesisterano/BlindJS.git"
+	},
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.openWithBlindJs",
+		"onCommand:extension.terminateBlindJs"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.openWithBlindJs",
+				"title": "Open With BlindJS"
+			},
+			{
+				"command": "extension.terminateBlindJs",
+				"title": "Terminate BlindJS"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.openWithBlindJs",
+					"group": "navigation"
+				},
+				{
+					"command": "extension.terminateBlindJs",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
+	}
+}
