@@ -1,4 +1,6 @@
+<img src="logo.png" />
 <h1>BlindJS</h1>
+<h3 style="text-transform: upper-case">The no code mistakes tool for presenters</h3>
 BlindJS is an extremely useful tool for <u>lectures, lessons and presentations</u>.<br />
 It allows you to write code samples quickly and without any chance for mistakes.<br />
 BlindJS is a Javascript library that replaces <u>content</u> with <u>pre-defined code</u> in your text editor or web page.

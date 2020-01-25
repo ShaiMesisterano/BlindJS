@@ -3,17 +3,23 @@
 	"displayName": "BlindJS",
 	"description": "BlindJS is a Javascript library that allows blind typing of pre-defined code. So stop worrying about writing valid code and start typing fast as hell!",
 	"version": "0.0.2",
+	"author": {
+		"name": "Shai Mesisterano"
+	  },
 	"publisher": "ShaiMesisterano",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ShaiMesisterano/BlindJS.git"
 	},
+	"homepage": "https://github.com/ShaiMesisterano/BlindJS",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"icon": "images/logo.png",
 	"activationEvents": [
 		"onCommand:extension.openWithBlindJs",
 		"onCommand:extension.terminateBlindJs"
