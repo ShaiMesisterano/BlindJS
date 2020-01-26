@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlindJS - The no code mistakes tool for presenters</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container">
+    <p class="text-center">
+        <img src="logo.png" alt="BlindJS Logo" class="mx-auto mb-4">
+    <h2 style="text-transform: uppercase">The no code mistakes tool for presenters</h2>
+    <p class="lead">BlindJS is an extremely useful tool for <u>lectures, lessons and presentations</u>.<br/>
+        It allows you to write code samples quickly and without any chance for mistakes.<br/>
+        BlindJS is a Javascript library that replaces <u>content</u> with <u>pre-defined code</u> in your text
+        editor or web page.</p>
+    <hr class="mb-4">
+    <h2>How To Use BlindJS In VSCode?</h2>
+    <p class="lead">
+        <iframe width="1020" height="630" src="https://www.youtube.com/embed/N9tsFpDMzrk" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </p>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>How To Use BlindJS In The Browser?</h4>
+            <ol>
+                <li>Include <code>src/blind.js</code> before <code>&lt;/body&gt;</code></li>
+                <li>Create a wrapper and insert your code:
+                    <pre>
+    &lt;div id="divElement"&gt;
+        function func(){
+            alert("Super Awesome!");
+        }
+    &lt;/div&gt;
+                    </pre>
+                </li>
+                <li>Add textarea placeholder:
+                    <pre>
+    &lt;textarea id="textareaElement"&gt;
+    &lt;/textarea&gt;
+                    </pre>
+                </li>
+                <li>Start BlindJS with reference to an input text &and; output element:
+                    <pre>
+    BlindJS.start({
+    input: divElement.innerText,
+    output: textareaElement
+    });
+                    </pre>
+                </li>
+            </ol>
+        </div>
+        <div class="col-md-6">
+            <h4>Live Browser Demo</h4>
+            <div class="col-md-6">
+                <p>Type Random Keys:</p>
+                <p>
+                <textarea id="textareaElement" style="width: 400px; height: 100px">
+                </textarea>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>Real Code:</p>
+                <p>
+                <pre style="text-align: left"><div id="divElement">function func(){
+    alert("Super Awesome!");
+}</div>
+                </pre>
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="mb-4">
+    <h2>About</h2>
+    <p class="lead">
+        BlindJS was created by <a href="http://www.mcterano.com/blog" title="Shai Mesisterano">Shai Mesisterano</a>
+        and is licensed under <a href="https://raw.github.com/ShaiMesisterano/BlindJS/master/LICENSE"
+                                 title="MIT LICENSE">MIT</a>.
+    </p>
+</div>
+</div>
+<script src="dist/blind.min.js"></script>
+<script>
+	BlindJS.start({
+		input: divElement.innerText,
+		output: textareaElement
+	});
+</script>
+</body>
+</html>
