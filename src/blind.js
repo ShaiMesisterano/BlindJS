@@ -1,42 +1,45 @@
-var BlindJS = (function (blindJS) {
+class _BlindJS {
+	constructor() {
+		this.column = null;
+		this.typed = null;
+		this.content = null;
+		this.$el = null;
+	}
 
-	"use strict";
-
-	blindJS.content = {};
-	blindJS.$el = {};
-
-	blindJS.printText = function () {
-		this.$el.value = this.typed;
-	};
-
-	blindJS.saveState = function () {
+	saveState() {
 		this.typed += this.content.slice(this.column, this.column + 1);
 		this.column += 1;
-	};
+	}
 
-	blindJS.type = function () {
-		blindJS.saveState();
-		blindJS.printText();
-	};
+	type() {
+		this.saveState();
+		this.print();
+		return this.typed;
+	}
 
-	blindJS.handleKeyUpEvent = function () {
-		this.$el.addEventListener('keyup', this.type);
-	};
+	print() {
+		if (this.$el) {
+			this.$el.value = this.typed;
+		}
+	}
 
-	blindJS.start = function (cfg) {
+	handleKeyUpEvent() {
+		if (this.$el) {
+			this.$el.addEventListener("keyup", this.type.bind(this));
+		}
+	}
+
+	start({input, output}) {
 		this.column = 0;
 		this.typed = "";
-		this.content = cfg.input;
-		this.$el = cfg.output;
-		this.call(handleKeyUpEvent);
-	};
-
-	return blindJS;
-
-})(BlindJS || {});
-
-if (typeof define === "function") {
-	define(function (require, exports, module) {
-		exports.BlindJS = BlindJS;
-	});
+		this.content = input;
+		if (output) {
+			this.$el = output;
+			this.handleKeyUpEvent.call(this);
+		}
+	}
 }
+
+const BlindJS = new _BlindJS();
+
+module.exports = BlindJS;
