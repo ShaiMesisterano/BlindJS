@@ -1,47 +1,41 @@
-<img src="logo.png" />
-<h1>BlindJS</h1>
-<h3 style="text-transform: uppercase">The no code mistakes tool for presenters</h3>
-BlindJS is an extremely useful tool for <u>lectures, lessons and presentations</u>.<br />
-It allows you to write code samples quickly and without any chance for mistakes.<br />
-BlindJS is a Javascript library that replaces <u>content</u> with <u>pre-defined code</u> in your text editor or web page.
-
-<h3>Quick install</h3>
-Include the Javascript code before <pre>&lt;/body&gt;</pre>:
-
-Create a wrapper and insert your code:
-
-<pre>
-&lt;div id="divElement"&gt;
-    function func(){
-        alert("Super Awesome!");
-    }
-&lt;/div&gt;
-</pre>
-
-Add textarea placeholder:
-
-<pre>
-&lt;textarea id="textareaElement"&gt;
-&lt;/textarea&gt;
-</pre>
-
-Start BlindJS with reference to:
-<ol>
-<li>input text</li>
-<li>output element</li>
-</ol>
-
-<pre>
-BlindJS.start({
-input: divElement.innerText,
-output: textareaElement
-});
-</pre>
-
-
-<h3>IDE Support</h3>
-New! BlindJS is enabled in <a href="http://download.brackets.io" target="_blank">Adobe Brackets</a>.
-Check out the extension: <a href="https://github.com/ShaiMesisterano/brackets-blindjs">https://github.com/ShaiMesisterano/brackets-blindjs</a>
-
-<h3>About</h3>
-BlindJS is created by <a href="http://www.mcterano.com/blog" title="Shai Mesisterano">Shai Mesisterano</a> and is licensed under <a href="https://raw.github.com/ShaiMesisterano/BlindJS/master/LICENSE" title="MIT LICENSE">MIT</a>.
+<img src="logo.png" alt="BlindJS Logo" />
+<h2 style="text-transform: uppercase">The no code mistakes tool for presenters</h2>
+<p>BlindJS is an extremely useful tool for <u>lectures, lessons and presentations</u>.<br/>
+        It allows you to write code samples quickly and without any chance for mistakes.<br/>
+        BlindJS is a Javascript library that replaces <u>content</u> with <u>pre-defined code</u> in your text
+        editor or web page.</p>
+        <h2>How To Use BlindJS In VSCode?</h2>
+        Watch a 1:30 video: <a href="https://www.youtube.com/N9tsFpDMzrk">https://www.youtube.com/embed/N9tsFpDMzrk</a>
+<h2>How To Use BlindJS In The Browser?</h2>
+            <ol>
+                <li>Include <code>dist/blind.min.js</code> before <code>&lt;/body&gt;</code></li>
+                <li>Create a wrapper and insert your code:
+                    <pre>
+    &lt;div id="divElement"&gt;
+        function func(){
+            alert("Super Awesome!");
+        }
+    &lt;/div&gt;
+                    </pre>
+                </li>
+                <li>Add textarea placeholder:
+                    <pre>
+    &lt;textarea id="textareaElement"&gt;
+    &lt;/textarea&gt;
+                    </pre>
+                </li>
+                <li>Start BlindJS with reference to an input text &and; output element:
+                    <pre>
+    BlindJS.start({
+    input: divElement.innerText,
+    output: textareaElement
+    });
+                    </pre>
+                </li>
+            </ol>
+            <h2>About</h2>
+                <p class="lead">
+                    BlindJS was created by <a href="http://www.mcterano.com/blog" title="Shai Mesisterano">Shai Mesisterano</a>
+                    and is licensed under <a href="https://raw.github.com/ShaiMesisterano/BlindJS/master/LICENSE"
+                                             title="MIT LICENSE">MIT</a>.
+                </p>
