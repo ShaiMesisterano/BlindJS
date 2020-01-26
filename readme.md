@@ -8,7 +8,7 @@
         Watch a 1:30 video: <a href="https://www.youtube.com/N9tsFpDMzrk">https://www.youtube.com/N9tsFpDMzrk</a>
 <h2>How To Use BlindJS In The Browser?</h2>
             <ol>
-                <li>Include <code>dist/blind.min.js</code> before <code>&lt;/body&gt;</code></li>
+                <li>Include <code>lib/blind.min.js</code> before <code>&lt;/body&gt;</code></li>
                 <li>Create a wrapper and insert your code:
                     <pre>
     &lt;div id="divElement"&gt;
