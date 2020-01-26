@@ -1,5 +1,5 @@
 const vscode = require('vscode');
-const BlindJS = require('../../dist/blind.min');
+const BlindJS = require('./lib/blind');
 
 const getCompleteDocumentRange = document => {
 	const firstLine = document.lineAt(0);
