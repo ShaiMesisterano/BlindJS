@@ -1,26 +1,5 @@
 const vscode = require('vscode');
-var BlindJS = (function (blindJS) {
-	blindJS.content = {};
-
-	blindJS.saveState = function () {
-		this.typed += this.content.slice(this.column, this.column + 1);
-		this.column += 1;
-	};
-
-	blindJS.type = function () {
-		blindJS.saveState();
-		return this.typed;
-	};
-
-	blindJS.start = function ({ input }) {
-		this.column = 0;
-		this.typed = "";
-		this.content = input;
-	};
-
-	return blindJS;
-
-})(BlindJS || {});
+const BlindJS = require('../../dist/blind.min');
 
 const getCompleteDocumentRange = document => {
 	const firstLine = document.lineAt(0);
@@ -31,23 +10,23 @@ const getCompleteDocumentRange = document => {
 let disposableType;
 function activate(context) {
 	console.log('activate');
-	
+
 	const disposableOpenWithBlindJs = vscode.commands.registerCommand('extension.openWithBlindJs', function ({ fsPath }) {
 		const setting = vscode.Uri.parse(fsPath);
 
 		disposableType = vscode.commands.registerCommand('type', () => {
 			const typed = BlindJS.type();
 			const { _line, _character } = vscode.window.activeTextEditor.selection.anchor;
-		
+
 			vscode.window.activeTextEditor.edit(activeEditor => {
 				let newPosition;
 				let newSelection;
-		
+
 				activeEditor.replace(getCompleteDocumentRange(activeEditor._document), typed);
-		
+
 				newPosition = new vscode.Position(_line + 1, _character + 1);
 				newSelection = new vscode.Selection(newPosition, newPosition);
-		
+
 				vscode.window.activeTextEditor.selection = newSelection;
 			});
 		});
@@ -72,7 +51,7 @@ function activate(context) {
 
 	const disposableTerminateBlindJs = vscode.commands.registerCommand('extension.terminateBlindJs', function () {
 		console.log('terminateBlindJs');
-		
+
 		disposableType.dispose()
 	});
 
