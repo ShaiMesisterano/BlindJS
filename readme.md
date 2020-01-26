@@ -5,7 +5,7 @@
         BlindJS is a Javascript library that replaces <u>content</u> with <u>pre-defined code</u> in your code
         editor or web page.</p>
         <h2>How To Use BlindJS In VSCode?</h2>
-        Watch a 1:30 video: <a href="https://www.youtube.com/N9tsFpDMzrk">https://www.youtube.com/N9tsFpDMzrk</a>
+        Watch a 1:30 video: <a href="https://www.youtube.com/zoC78I4eF4o">https://www.youtube.com/zoC78I4eF4o</a>
 <h2>How To Use BlindJS In The Browser?</h2>
             <ol>
                 <li>Include <code>lib/blind.min.js</code> before <code>&lt;/body&gt;</code></li>
