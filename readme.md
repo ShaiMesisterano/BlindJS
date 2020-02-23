@@ -5,7 +5,11 @@
         BlindJS is a Javascript library that replaces <u>content</u> with <u>pre-defined code</u> in your code
         editor or web page.</p>
         <h2>How To Use BlindJS In VSCode?</h2>
+        <p>When you want to show the code - right click and "Open With BlindJS"</p>
+        <p>When you want to go back to regular editing - right click and "Terminate BlindJS"</p>
         Watch a 1:30 video: <a href="https://www.youtube.com/watch?v=BkTxLGcwiu4">https://www.youtube.com/watch?v=zoC78I4eF4o</a>
+        <h2>How To Install BlindJS In VSCode?</h2>
+        Open VSCode and type <code>ctrl+P</code> and type <code>ext install ShaiMesisterano.blindjs</code>
 <h2>How To Use BlindJS In The Browser?</h2>
             <ol>
                 <li>Include <code>lib/blind.min.js</code> before <code>&lt;/body&gt;</code></li>
