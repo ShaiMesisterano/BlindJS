@@ -22,7 +22,7 @@
   "homepage": "https://github.com/ShaiMesisterano/BlindJS#readme",
   "devDependencies": {
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "babel-loader": "^8.0.6",
