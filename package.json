@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "scripts": {
-    "build": "webpack; cp src/blind.js extensions/vscode/lib/blind.js",
+    "build": "webpack; cp src/blind.js extensions/vscode/lib/blind.js; cp lib/blind.min.js extensions/chrome",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
