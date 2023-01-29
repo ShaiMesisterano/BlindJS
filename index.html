@@ -10,6 +10,14 @@
 
         gtag('config', 'G-F469QJXH5Z');
     </script>
+    <script>
+        function report() {
+            gtag('event', 'screen_view', {
+                'app_name': 'myAppName',
+                'screen_name': 'Home'
+            });
+        }
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -101,7 +109,7 @@
                                  title="MIT LICENSE">MIT</a>.
     </p>
     <p class="lead">
-        GitHub: <a href="https://github.com/ShaiMesisterano/BlindJS" target="_blank">https://github.com/ShaiMesisterano/BlindJS</a>
+        GitHub: <a href="https://github.com/ShaiMesisterano/BlindJS" target="_blank" onclick="report()">https://github.com/ShaiMesisterano/BlindJS</a>
     </p>
 </div>
 </div>
