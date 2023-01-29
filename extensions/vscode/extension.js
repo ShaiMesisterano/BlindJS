@@ -12,7 +12,7 @@ function activate(context) {
 	console.log('activate');
 
 	const disposableOpenWithBlindJs = vscode.commands.registerCommand('extension.openWithBlindJs', function ({ fsPath }) {
-		const setting = vscode.Uri.parse(fsPath);
+		const setting = vscode.Uri.file(fsPath);
 
 		disposableType = vscode.commands.registerCommand('type', () => {
 			const typed = BlindJS.type();

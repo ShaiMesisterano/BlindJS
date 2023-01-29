@@ -6,6 +6,11 @@
         editor or web page.</p>
         <h2>How To Use BlindJS In VSCode?</h2>
         Watch a 1:30 video: <a href="https://www.youtube.com/watch?v=BkTxLGcwiu4">https://www.youtube.com/watch?v=zoC78I4eF4o</a>
+        <h4>Commands</h4>
+        <p>Show the code - right click and "Open With BlindJS"</p>
+        <p>Go back to regular editing - right click and "Terminate BlindJS"</p>
+        <h2>How To Install BlindJS In VSCode?</h2>
+        Open VSCode and type <code>ctrl+P</code> and type <code>ext install ShaiMesisterano.blindjs</code>
 <h2>How To Use BlindJS In The Browser?</h2>
             <ol>
                 <li>Include <code>lib/blind.min.js</code> before <code>&lt;/body&gt;</code></li>
