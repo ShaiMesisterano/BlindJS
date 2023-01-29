@@ -6,29 +6,21 @@ class _BlindJS {
 		this.$el = null;
 	}
 
-	typeLine() {
-		let nextNewLineIndex = this.content.indexOf('\n', this.column + 1);
-
-		if (nextNewLineIndex === -1){
-			nextNewLineIndex = this.content.length;
-		}
-
-		this.typed += this.content.slice(this.column, nextNewLineIndex);
-		this.column = nextNewLineIndex;
+	reset() {
+		this.removeKeyUpEvent();
+		this.column = null;
+		this.typed = null;
+		this.content = null;
+		this.$el = null;
 	}
 
-	typeCharacter() {
+	saveState() {
 		this.typed += this.content.slice(this.column, this.column + 1);
 		this.column += 1;
 	}
 
-	type(event) {
-		event.preventDefault();
-		if (event.keyCode === 13) {
-			this.typeLine();
-		} else {
-			this.typeCharacter();
-		}
+	type() {
+		this.saveState();
 		this.print();
 		return this.typed;
 	}
@@ -41,7 +33,13 @@ class _BlindJS {
 
 	handleKeyUpEvent() {
 		if (this.$el) {
-			this.$el.addEventListener("keydown", this.type.bind(this));
+			this.$el.addEventListener("keyup", this.type.bind(this));
+		}
+	}
+
+	removeKeyUpEvent() {
+		if (this.$el) {
+			this.$el.removeEventListener("keyup", this.type.bind(this));
 		}
 	}
 
