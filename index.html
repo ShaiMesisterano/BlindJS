@@ -17,6 +17,10 @@
                 'screen_name': 'Home'
             });
         }
+
+        function event() {
+            gtag('event', 'random_keys');
+        }
     </script>
 
     <meta charset="UTF-8">
@@ -86,7 +90,7 @@
             <div class="col-md-6">
                 <p>Type Random Keys:</p>
                 <p>
-                <textarea id="textareaElement" style="width: 400px; height: 100px">
+                <textarea id="textareaElement" style="width: 400px; height: 100px" onchange="event()">
                 </textarea>
                 </p>
             </div>
