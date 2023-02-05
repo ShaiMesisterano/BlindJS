@@ -11,14 +11,14 @@
         gtag('config', 'G-F469QJXH5Z');
     </script>
     <script>
-        function report() {
+        function screenView() {
             gtag('event', 'screen_view', {
                 'app_name': 'myAppName',
                 'screen_name': 'Home'
             });
         }
 
-        function event() {
+        function typeRandomKeys() {
             gtag('event', 'random_keys');
         }
     </script>
@@ -90,7 +90,7 @@
             <div class="col-md-6">
                 <p>Type Random Keys:</p>
                 <p>
-                <textarea id="textareaElement" style="width: 400px; height: 100px" onchange="event()">
+                <textarea id="textareaElement" style="width: 400px; height: 100px" onchange="typeRandomKeys()">
                 </textarea>
                 </p>
             </div>
@@ -113,7 +113,7 @@
                                  title="MIT LICENSE">MIT</a>.
     </p>
     <p class="lead">
-        GitHub: <a href="https://github.com/ShaiMesisterano/BlindJS" target="_blank" onclick="report()">https://github.com/ShaiMesisterano/BlindJS</a>
+        GitHub: <a href="https://github.com/ShaiMesisterano/BlindJS" target="_blank" onclick="screenView()">https://github.com/ShaiMesisterano/BlindJS</a>
     </p>
 </div>
 </div>
