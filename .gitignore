@@ -107,3 +107,5 @@ dist
 .vscode-test
 
 .idea/
+
+extensions/chrome/js/background.js
