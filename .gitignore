@@ -108,4 +108,4 @@ dist
 
 .idea/
 
-extensions/chrome/js/background.js
+extensions/chrome/js/
