@@ -21,5 +21,8 @@
         "blind.min.js"
       ]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  }
 }
