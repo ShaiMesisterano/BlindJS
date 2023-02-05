@@ -1,7 +1,7 @@
 {
   "name": "BlindJS: no-code-mistakes tool for presenters",
   "description": "Write code samples without any chance for mistakes! Enter a text, click on activate and start typing inside a <textarea>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 3,
   "action": {
     "default_icon": "logo.png",
